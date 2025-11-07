@@ -2,13 +2,13 @@
 
 ---
 
-## 🎯 **Description**
+### 🎯 **Description**
 
 I decided to do a prompt to generate a function similar to something we already use at my workplace. I get a lot of data from external sources and it is often in CSV format. The CSVs are occsionally not formatted correctly, or missing fields or they have other issues that need to be dealt with before the data can be used. A first step in dealing with these CSVs is to validate that they are in the correct format.
 
 ---
 
-## 🎯 **The Prompt**
+### 🎯 **The Prompt**
 
 I need you to write a Python function called validate_csv_schema. Its main job is to act as a data quality gatekeeper, checking if a CSV file matches a defined schema before the data is processed further. The function should read the file, check each row against the schema rules, and collect any errors it finds into a detailed report.
 
