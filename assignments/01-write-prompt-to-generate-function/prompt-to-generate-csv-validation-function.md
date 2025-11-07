@@ -16,3 +16,12 @@ The two most critical things to check for are basic file access issues, like the
 
 Please make the function robust and return a clear dictionary report showing if the file is valid, a summary of the issues found, and a list of all violations with line numbers and descriptions. It should handle large files efficiently and provide useful error messages.
 
+---
+
+### 🔗 Reference: Generated implementation
+
+I used [ClaudeAI](https://claude.ai/) to prompt and generate the code. You can view the generated implementation of the validate_csv_schema function here:
+
+[@ekiara/moringaschool-ai-foundations-2025/files/assignments/01-write-prompt-to-generate-function/output_validate_csv_schema.py](https://github.com/ekiara/moringaschool-ai-foundations-2025/blob/95e8c41c7048d79aeff3a9bc045848501a8e150a/assignments/01-write-prompt-to-generate-function/output_validate_csv_schema.py)
+
+This file contains the full Python implementation produced from the prompt and can be used as a reference or dropped into your project for testing.
