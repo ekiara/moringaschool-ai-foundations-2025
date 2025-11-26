@@ -1,0 +1,1019 @@
+{
+  "meta": {
+    "description": "Conversation Flow for (Unofficial) Moringa School Information System with 8 Conversational Styles",
+    "version": "1.2 - Added 8 Conversational Style Variations"
+  },
+  "nodes": {
+    "start": {
+      "id": "start",
+      "type": "greeting",
+      "message": {
+        "base": "Hi, I am the (Unofficial) Moringa School Information System.",
+        "formal": "Good day. I am the (Unofficial) Moringa School Information System.",
+        "casual": "Hey there! I'm the unofficial Moringa School info bot.",
+        "humorous": "Greetings, human. I am the data-driven spirit of Moringa School, ready to serve (unofficially, of course).",
+        "inquisitive": "Hello. What information can I provide you with today regarding Moringa School?",
+        "narrative": "Let me introduce myself: I am the (Unofficial) Moringa School Information System, a digital chronicler of its journey.",
+        "concise": "Unofficial Moringa School Information System at your service.",
+        "encouraging": "Welcome! I'm here as the (Unofficial) Moringa School Information System to help you explore its story and courses.",
+        "playful": "Boop-beep! I'm the (Unofficial) Moringa School Information System, and I've got the data!"
+      },
+      "next_node": "main_menu",
+      "options": {}
+    },
+    "main_menu": {
+      "id": "main_menu",
+      "type": "choice",
+      "message": {
+        "base": "I can provide you with information about the **history** of Moringa School or I can tell you about the **training programmes** we have on offer. What would you like?",
+        "formal": "I am equipped to dispense information on the **historical milestones** of Moringa School or detail the **current training programmes**. Kindly specify your preference.",
+        "casual": "Wanna hear about Moringa's **history** or check out the **courses** they're running? Up to you!",
+        "humorous": "Prepare to be amazed by either the **historical facts** or the glorious list of **courses**! Which destiny do you choose?",
+        "inquisitive": "Are you interested in the **historical journey** of Moringa School, or do you seek details on the **available training programmes**?",
+        "narrative": "Shall we begin by exploring the **history**, or would you prefer to review the current **training programmes** that shape tomorrow's tech leaders?",
+        "concise": "Choose: **History** or **Training Programmes**?",
+        "encouraging": "You have two great options! Let's explore the School's incredible **history** or dive right into the exciting **training programmes**.",
+        "playful": "Ooh, a choice! **History** mode or **Training Programme** treasure hunt? Let's go!"
+      },
+      "options": {
+        "history": "history_event_1",
+        "historical facts": "history_event_1",
+        "historical": "history_event_1",
+        "facts": "history_event_1",
+        "milestones": "history_event_1",
+        "programmes": "programmes_menu",
+        "training": "programmes_menu",
+        "current": "programmes_menu",
+        "courses": "programmes_menu",
+        "learning": "programmes_menu"
+      }
+    },
+    "history_event_1": {
+      "id": "history_event_1",
+      "type": "info_loop",
+      "message": {
+        "base": "**2014 (April/May)**: Moringa School was founded in Nairobi, Kenya, by Audrey Cheng (and Frank Tamre). The school began with its first cohort of 4-5 students, focusing on closing the tech skills gap in the region. Would you like to know what happened next?",
+        "formal": "The genesis occurred in **2014 (April/May)**: Moringa School was established in Nairobi, Kenya, by Audrey Cheng (with Frank Tamre). The inaugural cohort comprised 4-5 students, with the initial mandate being to address the regional tech skills deficit. Shall I proceed to the next event?",
+        "casual": "It all started in **2014 (April/May)**! Audrey Cheng (and Frank Tamre) founded Moringa School in Nairobi with just a tiny group of 4-5 students to tackle the tech skills shortage. Ready for the next big thing?",
+        "humorous": "The origin story begins in **2014 (April/May)**, when Audrey Cheng (and Frank Tamre) launched Moringa School in Nairobi with just enough students to play a very small game of tag (4-5 of them). Want more historical nuggets?",
+        "inquisitive": "In **2014 (April/May)**, Moringa School was established in Nairobi, Kenya, by Audrey Cheng (and Frank Tamre). It commenced with a small cohort of 4-5 students, aiming to close the tech skills gap. What milestone followed this initial foundation?",
+        "narrative": "Our tale begins in **2014 (April/May)**. In Nairobi, Kenya, Audrey Cheng (and Frank Tamre) laid the foundation of Moringa School with a pioneering cohort of 4-5 students, driven by the mission to fill the gaping tech skills void. Will you turn the page to the next chapter?",
+        "concise": "**2014 (April/May)**: Moringa School founded in Nairobi by Audrey Cheng (and Frank Tamre). Started with 4-5 students to close the tech skills gap. Next event?",
+        "encouraging": "That's a strong start! In **2014 (April/May)**, Moringa School, founded by Audrey Cheng (and Frank Tamre), began in Nairobi with 4-5 students, focused on bridging the tech skills gap. Keep going to see the journey unfold?",
+        "playful": "Poof! **2014 (April/May)**! Moringa School appears in Nairobi, thanks to Audrey Cheng (and Frank Tamre), starting with a cozy 4-5 students to level up local tech skills. What's the next year's quest?"
+      },
+      "options": {
+        "yes": "history_event_2",
+        "no": "main_menu",
+        "go": "history_event_2",
+        "continue": "history_event_2",
+        "more": "history_event_2",
+        "stop": "main_menu",
+        "end": "main_menu"
+      }
+    },
+    "history_event_2": {
+      "id": "history_event_2",
+      "type": "info_loop",
+      "message": {
+        "base": "**Early 2016**: The school entered a new phase of growth, referred to as **'Moringa 2.0,'** and held its first alumni night. It also moved to its current home at **Ngong Lane Plaza**. Would you like to know what happened next?",
+        "formal": "In **Early 2016**, the school initiated a significant expansion phase, designated as **'Moringa 2.0,'** concurrent with the first alumni night. Furthermore, it relocated to its present premises at **Ngong Lane Plaza**. Do you require information on the subsequent event?",
+        "casual": "**Early 2016** was a big step: 'Moringa 2.0' kicked off with new growth, the first alumni night happened, and they moved into their spot at **Ngong Lane Plaza**. What's next on the timeline?",
+        "humorous": "**Early 2016**: The school leveled up to **'Moringa 2.0,'** celebrated its first alumni night (cake optional), and upgraded its headquarters to **Ngong Lane Plaza**. Still curious about the past?",
+        "inquisitive": "**Early 2016** marked the 'Moringa 2.0' growth phase, the inaugural alumni night, and the move to **Ngong Lane Plaza**. What was the following major development?",
+        "narrative": "The year **Early 2016** brought a pivotal transformation, dubbed **'Moringa 2.0.'** The community grew, celebrating its first alumni night, and the school found its lasting home at **Ngong Lane Plaza**. Continue the story?",
+        "concise": "**Early 2016**: Began 'Moringa 2.0' growth phase, held first alumni night, and moved to **Ngong Lane Plaza**. Next event?",
+        "encouraging": "That's fantastic progress! **Early 2016** brought 'Moringa 2.0,' the first alumni night, and the move to **Ngong Lane Plaza**. Let's discover the next milestone!",
+        "playful": "Ding! **Early 2016** unlocked 'Moringa 2.0' and a sweet new base at **Ngong Lane Plaza**, plus a party for the first alumni! Ready for the next plot twist?"
+      },
+      "options": {
+        "yes": "history_event_3",
+        "no": "main_menu",
+        "go": "history_event_3",
+        "continue": "history_event_3",
+        "more": "history_event_3",
+        "stop": "main_menu",
+        "end": "main_menu"
+      }
+    },
+    "history_event_3": {
+      "id": "history_event_3",
+      "type": "info_loop",
+      "message": {
+        "base": "**Early 2016**: Moringa announced its first major **global partnership** by licensing its curriculum and learning model to **Xccelerate**, a coding bootcamp in Hong Kong, marking its initial international reach. Would you like to know what happened next?",
+        "formal": "Also in **Early 2016**, Moringa established its inaugural major **global partnership**, licensing its curriculum and model to **Xccelerate**, a Hong Kong coding bootcamp, signifying its initial international presence. Should I provide the next historical entry?",
+        "casual": "Check this out: in **Early 2016**, Moringa went global! They licensed their awesome curriculum to **Xccelerate** in Hong Kong. Want to keep going?",
+        "humorous": "Plot twist: **Early 2016** wasn't just about Ngong Lane! Moringa took its learning recipe and licensed it to **Xccelerate** in Hong Kong. They went international! Still on the history train?",
+        "inquisitive": "In **Early 2016**, Moringa secured its first major **global partnership** by licensing its curriculum to **Xccelerate** in Hong Kong. What was the next significant development?",
+        "narrative": "A key moment in **Early 2016** was the announcement of the first major **global partnership**; the curriculum and model were licensed to **Xccelerate** in Hong Kong, projecting the school's influence beyond Kenya's borders. What comes after this leap?",
+        "concise": "**Early 2016**: Secured first major **global partnership**, licensing curriculum to **Xccelerate** in Hong Kong. Next event?",
+        "encouraging": "That's a huge step toward global impact! In **Early 2016**, Moringa made its first major global partnership, licensing its curriculum to **Xccelerate** in Hong Kong. Continue to the next event?",
+        "playful": "Zoom! **Early 2016** saw Moringa jump the border and license its magic to **Xccelerate** in Hong Kong. Global domination, one bootcamp at a time! More history, please?"
+      },
+      "options": {
+        "yes": "history_event_4",
+        "no": "main_menu",
+        "go": "history_event_4",
+        "continue": "history_event_4",
+        "more": "history_event_4",
+        "stop": "main_menu",
+        "end": "main_menu"
+      }
+    },
+    "history_event_4": {
+      "id": "history_event_4",
+      "type": "info_loop",
+      "message": {
+        "base": "**January 2018**: The school launched **Nairobi Tech Week (NTW)**, an annual tech event for product makers in Sub-Saharan Africa. Would you like to know what happened next?",
+        "formal": "In **January 2018**, the institution inaugurated **Nairobi Tech Week (NTW)**, establishing it as an annual technology event dedicated to product makers across Sub-Saharan Africa. Shall I articulate the subsequent milestone?",
+        "casual": "**January 2018**: They started their own major annual party—the **Nairobi Tech Week (NTW)**—for all the product makers in Sub-Saharan Africa. Next?",
+        "humorous": "Ding! A wild **Nairobi Tech Week (NTW)** appeared in **January 2018**! It's an annual gathering of Sub-Saharan Africa's product makers. Ready for another historical fact?",
+        "inquisitive": "**January 2018** saw the launch of **Nairobi Tech Week (NTW)**, an annual tech event for Sub-Saharan African product makers. What followed this launch?",
+        "narrative": "The calendar turned to **January 2018**, and a new community event was born: **Nairobi Tech Week (NTW)**, an annual forum for the region's innovative product makers. What event looms after this?",
+        "concise": "**January 2018**: Launched **Nairobi Tech Week (NTW)**, an annual tech event for Sub-Saharan African product makers. Next event?",
+        "encouraging": "That's a great contribution to the local ecosystem! In **January 2018**, they launched **Nairobi Tech Week (NTW)**. Press on for the next achievement!",
+        "playful": "Whoosh! **January 2018** brought the cool **Nairobi Tech Week (NTW)**, an annual celebration for tech builders! More history, please!"
+      },
+      "options": {
+        "yes": "history_event_5",
+        "no": "main_menu",
+        "go": "history_event_5",
+        "continue": "history_event_5",
+        "more": "history_event_5",
+        "stop": "main_menu",
+        "end": "main_menu"
+      }
+    },
+    "history_event_5": {
+      "id": "history_event_5",
+      "type": "info_loop",
+      "message": {
+        "base": "**September 2019**: Moringa launched its **Data Science Course**, expanding its curriculum beyond Software Engineering. Would you like to know what happened next?",
+        "formal": "By **September 2019**, Moringa introduced its **Data Science Course**, marking an expansion of the curriculum outside of the initial Software Engineering focus. What occurred next?",
+        "casual": "**September 2019**: They started teaching more than just code and launched their **Data Science Course**. Curious what else happened that year?",
+        "humorous": "The syllabus got an upgrade in **September 2019**! They launched a shiny new **Data Science Course**, proving they weren't just about Software Engineering anymore. Roll on the next fact!",
+        "inquisitive": "In **September 2019**, Moringa expanded its offerings beyond Software Engineering with the launch of the **Data Science Course**. What came after this curriculum expansion?",
+        "narrative": "The narrative of learning broadened in **September 2019**, as the new **Data Science Course** was introduced, extending the school's expertise beyond the realm of Software Engineering. Continue the journey?",
+        "concise": "**September 2019**: Launched **Data Science Course**, expanding beyond Software Engineering. Next event?",
+        "encouraging": "Expanding the curriculum is a big win! In **September 2019**, the **Data Science Course** was launched. Ready for the next chapter?",
+        "playful": "New course unlocked! **September 2019** gave us the **Data Science Course**, adding a whole new branch to the tech tree! What's next?"
+      },
+      "options": {
+        "yes": "history_event_6",
+        "no": "main_menu",
+        "go": "history_event_6",
+        "continue": "history_event_6",
+        "more": "history_event_6",
+        "stop": "main_menu",
+        "end": "main_menu"
+      }
+    },
+    "history_event_6": {
+      "id": "history_event_6",
+      "type": "info_loop",
+      "message": {
+        "base": "**October 2019**: Secured its **Seed Investment from DOB Equity**, a Dutch family-backed impact investor, to facilitate regional expansion and strengthen its platform. Would you like to know what happened next?",
+        "formal": "In **October 2019**, the school successfully secured its **Seed Investment from DOB Equity**, a Dutch family-backed impact investor. This capital was allocated to facilitate regional expansion and platform enhancement. What is the subsequent entry?",
+        "casual": "Money time! In **October 2019**, Moringa got its **Seed Investment from DOB Equity** (a Dutch impact investor) to help it grow regionally and make the platform better. What's the next big move?",
+        "humorous": "Big news in **October 2019**: The money fairy (a.k.a. **DOB Equity**) dropped a Seed Investment to help Moringa spread its wings regionally. More growing pains, please!",
+        "inquisitive": "Following the curriculum expansion, **October 2019** brought a **Seed Investment from DOB Equity** to fund regional expansion and platform growth. What development succeeded this investment?",
+        "narrative": "A vital moment of validation arrived in **October 2019** with the securing of **Seed Investment from DOB Equity**. This funding was the catalyst for ambitious regional expansion and platform fortification. Do we continue?",
+        "concise": "**October 2019**: Secured **Seed Investment from DOB Equity** for regional expansion and platform strengthening. Next event?",
+        "encouraging": "Securing Seed Investment is a huge boost! In **October 2019**, they got funding from **DOB Equity** to expand regionally. Let's look at the next step!",
+        "playful": "Cha-ching! **October 2019**! **DOB Equity** gave Moringa Seed Investment money to become a bigger, better, regional force! What's the next exciting chapter?"
+      },
+      "options": {
+        "yes": "history_event_7",
+        "no": "main_menu",
+        "go": "history_event_7",
+        "continue": "history_event_7",
+        "more": "history_event_7",
+        "stop": "main_menu",
+        "end": "main_menu"
+      }
+    },
+    "history_event_7": {
+      "id": "history_event_7",
+      "type": "info_loop",
+      "message": {
+        "base": "**2019–2021**: Ran the **WeCode Project in Kigali, Rwanda**, extending its impact outside Kenya. Would you like to know what happened next?",
+        "formal": "Between **2019 and 2021**, the school managed the **WeCode Project in Kigali, Rwanda**, demonstrating a continued commitment to extending its impact beyond the borders of Kenya. What is the subsequent notable event?",
+        "casual": "From **2019 to 2021**, they were busy in Rwanda, running the **WeCode Project in Kigali**, showing their impact wasn't just in Kenya anymore. Keep the history coming?",
+        "humorous": "Moringa's passport got stamped! From **2019–2021**, they were running the **WeCode Project in Kigali, Rwanda**. They took their talents abroad! What happened after they came back?",
+        "inquisitive": "What was the next milestone after the **2019–2021 WeCode Project in Kigali, Rwanda**, which extended Moringa's impact outside Kenya?",
+        "narrative": "The years **2019–2021** saw the school's influence grow as they ran the impactful **WeCode Project in Kigali, Rwanda**, proving their mission was regional. Shall we proceed?",
+        "concise": "**2019–2021**: Ran the **WeCode Project in Kigali, Rwanda**, extending impact outside Kenya. Next event?",
+        "encouraging": "That project in Rwanda is a wonderful example of regional impact! The **WeCode Project in Kigali** ran from **2019–2021**. Ready for the next big milestone?",
+        "playful": "Rwanda called, and Moringa answered! The **WeCode Project** ran in Kigali from **2019–2021**. Did they break any enrollment records next?"
+      },
+      "options": {
+        "yes": "history_event_8",
+        "no": "main_menu",
+        "go": "history_event_8",
+        "continue": "history_event_8",
+        "more": "history_event_8",
+        "stop": "main_menu",
+        "end": "main_menu"
+      }
+    },
+    "history_event_8": {
+      "id": "history_event_8",
+      "type": "info_loop",
+      "message": {
+        "base": "**February 2020**: Enrolled its **largest class yet**, with **over 225 students** in the Software Development program. Would you like to know what happened next?",
+        "formal": "In **February 2020**, the institution recorded a historical high in enrollment, welcoming **over 225 students** into the Software Development program. May I present the next fact?",
+        "casual": "Big numbers in **February 2020**! They enrolled their **largest class ever**, with **over 225 students** in Software Development. What else went down that year?",
+        "humorous": "The student counter exploded in **February 2020**! They hit their **largest class yet**, welcoming a whopping **225+ students** in Software Dev. More history, or ready for courses?",
+        "inquisitive": "In **February 2020**, the school enrolled its **largest class yet**, featuring **over 225 students** in Software Development. What significant event is next?",
+        "narrative": "A milestone was reached in **February 2020** as the school enrolled its **largest class yet**: **over 225 students** joined the Software Development journey. What followed this moment of growth?",
+        "concise": "**February 2020**: Enrolled **largest class yet** (over **225 students**) in Software Development. Next event?",
+        "encouraging": "Setting a new record is exciting! **February 2020** brought the **largest class yet**, with **over 225 students**. Let's keep exploring their journey!",
+        "playful": "Woohoo! **February 2020**: Record enrollment! Over **225 students** in Software Dev! Did they win an award next?"
+      },
+      "options": {
+        "yes": "history_event_9",
+        "no": "main_menu",
+        "go": "history_event_9",
+        "continue": "history_event_9",
+        "more": "history_event_9",
+        "stop": "main_menu",
+        "end": "main_menu"
+      }
+    },
+    "history_event_9": {
+      "id": "history_event_9",
+      "type": "info_loop",
+      "message": {
+        "base": "**2020**: Was listed among the **Top 50 EdTech companies in Africa by HolonIQ**. Would you like to know what happened next?",
+        "formal": "In **2020**, the school achieved recognition, being listed among the **Top 50 EdTech companies in Africa by HolonIQ**. Should I proceed to the following event?",
+        "casual": "**2020** was a good year for recognition: Moringa was named one of the **Top 50 EdTech companies in Africa by HolonIQ**. Ready for the next fact?",
+        "humorous": "A gold star for **2020**! HolonIQ put Moringa on its list of **Top 50 EdTech companies in Africa**. Apparently, they're kind of a big deal! What's the next award?",
+        "inquisitive": "After enrolling its largest class, **2020** saw Moringa listed among the **Top 50 EdTech companies in Africa by HolonIQ**. What accomplishment followed?",
+        "narrative": "The year **2020** brought prestige, as HolonIQ named Moringa among the **Top 50 EdTech companies in Africa**. The story continues with more notable achievements. Would you like to know what happened next?",
+        "concise": "**2020**: Listed among **Top 50 EdTech companies in Africa by HolonIQ**. Next event?",
+        "encouraging": "That's fantastic recognition! In **2020**, they made the **HolonIQ Top 50 EdTech list**. Keep going for more milestones!",
+        "playful": "Level up! **2020**: Moringa is now a **Top 50 EdTech company in Africa**! What's the next challenge?"
+      },
+      "options": {
+        "yes": "history_event_10",
+        "no": "main_menu",
+        "go": "history_event_10",
+        "continue": "history_event_10",
+        "more": "history_event_10",
+        "stop": "main_menu",
+        "end": "main_menu"
+      }
+    },
+    "history_event_10": {
+      "id": "history_event_10",
+      "type": "info_loop",
+      "message": {
+        "base": "**Early 2021**: Achieved **ISO 9001:2015 certification** and was cited by the **World Bank as a leader** in the tech bootcamp space. Would you like to know what happened next?",
+        "formal": "In **Early 2021**, the institution attained **ISO 9001:2015 certification** and was simultaneously recognized by the **World Bank as a leader** in the technical bootcamp sector. Do you wish to hear the subsequent event?",
+        "casual": "**Early 2021**: Double win! They got the official **ISO 9001:2015 certification** and the **World Bank** said they're a **leader** in tech bootcamps. What happened later that year?",
+        "humorous": "**Early 2021**: Achievement unlocked! They got the official-sounding **ISO 9001:2015 certification**, and the **World Bank** gave them a giant thumbs-up for being a tech bootcamp **leader**. More certifications coming up?",
+        "inquisitive": "After the HolonIQ recognition, **Early 2021** saw the school achieve **ISO 9001:2015 certification** and be cited as a **leader** by the **World Bank**. What was the following milestone?",
+        "narrative": "The climb continued in **Early 2021**, marked by the respected **ISO 9001:2015 certification** and a powerful endorsement from the **World Bank**, which designated the school a **leader**. What came next?",
+        "concise": "**Early 2021**: Achieved **ISO 9001:2015 certification** and cited by **World Bank as a leader**. Next event?",
+        "encouraging": "Securing ISO certification and World Bank recognition is massive! **Early 2021** was a big year. Let's see what happened next!",
+        "playful": "Super-powered **Early 2021**! They got the **ISO 9001:2015** badge and the **World Bank** called them a **leader**! What other cool awards did they get?"
+      },
+      "options": {
+        "yes": "history_event_11",
+        "no": "main_menu",
+        "go": "history_event_11",
+        "continue": "history_event_11",
+        "more": "history_event_11",
+        "stop": "main_menu",
+        "end": "main_menu"
+      }
+    },
+    "history_event_11": {
+      "id": "history_event_11",
+      "type": "info_loop",
+      "message": {
+        "base": "**2021**: Received several major recognitions, including being named a **World Economic Forum Technology Pioneer** and winning the **Education Sector Award at the CIO100 Awards**. Would you like to know what happened next?",
+        "formal": "Throughout **2021**, the school garnered multiple major accolades, notably being designated a **World Economic Forum Technology Pioneer** and securing the **Education Sector Award at the CIO100 Awards**. May I present the next significant event?",
+        "casual": "They were on a roll in **2021**! They became a **World Economic Forum Technology Pioneer** and snagged the **Education Sector Award at the CIO100 Awards**. What's next?",
+        "humorous": "**2021** was award season! They were deemed a super-fancy **World Economic Forum Technology Pioneer** and won the **Education Sector Award at the CIO100 Awards**. Any CEO changes on the horizon?",
+        "inquisitive": "Following the ISO certification, **2021** brought recognition as a **World Economic Forum Technology Pioneer** and a win at the **CIO100 Awards**. What major shift followed these achievements?",
+        "narrative": "The year **2021** was one of peak recognition, with the title of **World Economic Forum Technology Pioneer** and the **Education Sector Award** among its triumphs. What internal changes did the new year bring?",
+        "concise": "**2021**: Named a **World Economic Forum Technology Pioneer** and won **Education Sector Award at CIO100 Awards**. Next event?",
+        "encouraging": "Wow, being a Technology Pioneer is huge! **2021** was a monumental year. What major leadership changes took place next?",
+        "playful": "So many trophies in **2021**! **World Economic Forum Technology Pioneer** and a **CIO100 Award**! Who's steering the ship now?"
+      },
+      "options": {
+        "yes": "history_event_12",
+        "no": "main_menu",
+        "go": "history_event_12",
+        "continue": "history_event_12",
+        "more": "history_event_12",
+        "stop": "main_menu",
+        "end": "main_menu"
+      }
+    },
+    "history_event_12": {
+      "id": "history_event_12",
+      "type": "info_loop",
+      "message": {
+        "base": "**January 2022**: A major organizational shift occurred: **Snehar Shah succeeded founder Audrey Cheng as the new CEO**, signaling a focus on scale-up. Would you like to know what happened next?",
+        "formal": "In **January 2022**, a significant organizational transition was executed: **Snehar Shah succeeded founder Audrey Cheng as the new CEO**, indicating an institutional focus on scaling operations. What event followed this change in leadership?",
+        "casual": "Big change in **January 2022**: The founder, Audrey Cheng, stepped down, and **Snehar Shah took over as the new CEO** to really focus on scaling up the school. What was the first big move under the new CEO?",
+        "humorous": "New year, new boss! In **January 2022**, the baton passed from founder Audrey Cheng to **Snehar Shah, the new CEO**, who presumably came with a 'scale-up' super-suit. What's the next action item?",
+        "inquisitive": "Following the major awards, **January 2022** saw an organizational shift: **Snehar Shah succeeded Audrey Cheng as CEO**. What was the next significant action taken?",
+        "narrative": "The dawn of **January 2022** brought a change in stewardship: **Snehar Shah succeeded founder Audrey Cheng as the new CEO**, embarking on a focused mission to scale the school's impact. What partnership followed this strategic move?",
+        "concise": "**January 2022**: **Snehar Shah succeeded Audrey Cheng as new CEO**, focusing on scale-up. Next event?",
+        "encouraging": "A new chapter for scaling up! **January 2022** saw **Snehar Shah** take over as **CEO**. Let's see what partnerships followed!",
+        "playful": "Passing the CEO torch! **January 2022**: **Snehar Shah** takes the wheel from Audrey Cheng to make Moringa super-sized! Did they make a new friend next?"
+      },
+      "options": {
+        "yes": "history_event_13",
+        "no": "main_menu",
+        "go": "history_event_13",
+        "continue": "history_event_13",
+        "more": "history_event_13",
+        "stop": "main_menu",
+        "end": "main_menu"
+      }
+    },
+    "history_event_13": {
+      "id": "history_event_13",
+      "type": "info_loop",
+      "message": {
+        "base": "**January 2022**: Announced a key curriculum **partnership with the Flatiron School**, a leading US coding bootcamp, to use their world-class content for African students. Would you like to know what happened next?",
+        "formal": "Also in **January 2022**, a crucial curriculum **partnership was announced with the Flatiron School**, a preeminent US coding bootcamp, to integrate their content for African students. What subsequent financial milestone was achieved?",
+        "casual": "Another big **January 2022** move: a sweet curriculum **partnership with the Flatiron School** (a top US bootcamp) to bring their world-class material to African students. Ready for the next piece of news?",
+        "humorous": "The new CEO's first move in **January 2022**: Bestie status with the **Flatiron School**! They're sharing their awesome curriculum like high-tech snacks for African students. What did they fund next?",
+        "inquisitive": "In **January 2022**, a key curriculum **partnership with the Flatiron School** was established. What was the next major event following this curriculum enhancement?",
+        "narrative": "A vital alliance was forged in **January 2022**: A curriculum **partnership with the Flatiron School**, a US coding powerhouse, ensuring world-class content for African students. What funding followed this strategic move?",
+        "concise": "**January 2022**: Announced key curriculum **partnership with the Flatiron School** (US coding bootcamp). Next event?",
+        "encouraging": "Partnering with Flatiron School for curriculum is amazing! **January 2022** was busy. Let's see how they funded their expansion next!",
+        "playful": "The **Flatiron School** said, 'Let's be friends!' in **January 2022**, sharing their curriculum secrets! Did they also find a treasure chest of money next?"
+      },
+      "options": {
+        "yes": "history_event_14",
+        "no": "main_menu",
+        "go": "history_event_14",
+        "continue": "history_event_14",
+        "more": "history_event_14",
+        "stop": "main_menu",
+        "end": "main_menu"
+      }
+    },
+    "history_event_14": {
+      "id": "history_event_14",
+      "type": "info_loop",
+      "message": {
+        "base": "**2022 (Mid-year)**: Secured **additional funding**, including a **$9.5 million investment from the Mastercard Foundation** and a **Pre-Series-A investment from Proparco (AFD Group)**, to accelerate its expansion across Africa. Would you like to know what happened next?",
+        "formal": "In **2022 (Mid-year)**, substantial **additional funding** was secured, notably a **$9.5 million investment from the Mastercard Foundation** and a **Pre-Series-A investment from Proparco (AFD Group)**, designated for the acceleration of African expansion. What was the result of this funding?",
+        "casual": "**Mid-2022**: Big money! They got **additional funding**, including a **$9.5 million investment from the Mastercard Foundation** and a **Pre-Series-A from Proparco**, all to speed up their African expansion. Where did they expand to first?",
+        "humorous": "**Mid-2022**: The piggy bank exploded! **$9.5 million from the Mastercard Foundation** plus a **Pre-Series-A from Proparco**! That's 'expand across Africa' money! Where did they spend it first?",
+        "inquisitive": "Following the Flatiron partnership, **Mid-2022** saw **$9.5 million from the Mastercard Foundation** and a **Pre-Series-A from Proparco** secured for expansion. What was the immediate result of this funding?",
+        "narrative": "The coffers were strengthened in **Mid-2022** with **additional funding**, including the massive **$9.5 million investment from the Mastercard Foundation** and a **Pre-Series-A from Proparco**, fueling the expansion mandate across Africa. Where did the journey take them?",
+        "concise": "**2022 (Mid-year)**: Secured **$9.5 million from Mastercard Foundation** and **Pre-Series-A from Proparco** for African expansion. Next event?",
+        "encouraging": "Securing that level of funding is incredible! **Mid-2022** brought a **$9.5 million investment** and more to accelerate expansion. Where did they start their West African journey?",
+        "playful": "The money rocket launched in **Mid-2022**! **$9.5 million** and an extra investment to zoom across Africa! Did they land in West Africa next?"
+      },
+      "options": {
+        "yes": "history_event_15",
+        "no": "main_menu",
+        "go": "history_event_15",
+        "continue": "history_event_15",
+        "more": "history_event_15",
+        "stop": "main_menu",
+        "end": "main_menu"
+      }
+    },
+    "history_event_15": {
+      "id": "history_event_15",
+      "type": "info_loop",
+      "message": {
+        "base": "**2022**: Began its official **regional expansion into West Africa**, starting training programs in countries like **Ghana and Nigeria**. Would you like to know what happened next?",
+        "formal": "In **2022**, the institution commenced its official **regional expansion into West Africa**, initiating training programs in nations such as **Ghana and Nigeria**. What is the ultimate historical milestone?",
+        "casual": "It happened! In **2022**, they officially started their **West Africa expansion**, kicking off training in **Ghana and Nigeria**. What's the latest achievement?",
+        "humorous": "Moringa West Africa is go! In **2022**, they officially expanded, setting up tech camps in **Ghana and Nigeria**. Are they accredited yet?",
+        "inquisitive": "After securing funding, **2022** brought the official **West Africa expansion** with training in **Ghana and Nigeria**. What is the most recent significant milestone?",
+        "narrative": "The expansion across Africa began in earnest in **2022**, with the school launching training programs in **Ghana and Nigeria** in West Africa. What recent accreditation marked their commitment to quality?",
+        "concise": "**2022**: Began official **regional expansion into West Africa**, with programs in **Ghana and Nigeria**. Next event?",
+        "encouraging": "Expanding to Ghana and Nigeria is huge for West Africa! **2022** was a big year for growth. Let's see the latest achievement!",
+        "playful": "They're everywhere! **2022**: Official **West Africa expansion** into **Ghana and Nigeria**! Did they get a gold star from the government next?"
+      },
+      "options": {
+        "yes": "history_event_16",
+        "no": "main_menu",
+        "go": "history_event_16",
+        "continue": "history_event_16",
+        "more": "history_event_16",
+        "stop": "main_menu",
+        "end": "main_menu"
+      }
+    },
+    "history_event_16": {
+      "id": "history_event_16",
+      "type": "info_loop",
+      "message": {
+        "base": "**Recent Milestone**: Achieved accreditation as the **Only TVETA-Accredited Tech Bootcamp in Kenya**, ensuring its programs meet national standards of technical education. Would you like to know what happened next?",
+        "formal": "A **Recent Milestone**: The school achieved accreditation as the **Only TVETA-Accredited Tech Bootcamp in Kenya**, ensuring its programs conform to national technical education standards. What is the final entry?",
+        "casual": "**Recent Milestone**: They are the **Only TVETA-Accredited Tech Bootcamp in Kenya**, which means their programs are government-approved and high-quality! Just one more milestone left!",
+        "humorous": "The most **Recent Milestone**: They got the official stamp! They are the **Only TVETA-Accredited Tech Bootcamp in Kenya**. That's like getting a government-issued gold star! What's the last fact?",
+        "inquisitive": "The **Recent Milestone** is accreditation as the **Only TVETA-Accredited Tech Bootcamp in Kenya**. What is the final historical event?",
+        "narrative": "A **Recent Milestone** cemented their quality: the school became the **Only TVETA-Accredited Tech Bootcamp in Kenya**, a testament to their national standard of excellence. Just one final chapter remains. Would you like to know what happened next?",
+        "concise": "**Recent Milestone**: Achieved accreditation as the **Only TVETA-Accredited Tech Bootcamp in Kenya**. Next event?",
+        "encouraging": "That's a fantastic achievement for quality assurance! The **Only TVETA-Accredited Tech Bootcamp in Kenya**! One last milestone to go!",
+        "playful": "Yay! **Recent Milestone**: They're officially official! The **Only TVETA-Accredited Tech Bootcamp in Kenya**! Final historical fun fact?"
+      },
+      "options": {
+        "yes": "history_event_17",
+        "no": "main_menu",
+        "go": "history_event_17",
+        "continue": "history_event_17",
+        "more": "history_event_17",
+        "stop": "main_menu",
+        "end": "main_menu"
+      }
+    },
+    "history_event_17": {
+      "id": "history_event_17",
+      "type": "info_transition",
+      "message": {
+        "base": "**2024**: Celebrated its **10th Anniversary** of pioneering tech education in Africa, having trained **over 8,000 professionals**. This concludes the history of Moringa School. Would you like to see the available training programmes instead?",
+        "formal": "Finally, in **2024**, the institution commemorated its **10th Anniversary** of pioneering African tech education, having successfully trained **over 8,000 professionals**. This concludes the historical overview. Shall we transition to the available training programmes?",
+        "casual": "The big finale is **2024**! They celebrated their **10th Anniversary** and have trained **over 8,000 pros**! That's the history. Want to check out the courses now?",
+        "humorous": "The grand finish! **2024**: The **10th Anniversary** party! They've trained **over 8,000 professionals**—that's a lot of coding! History is done. Courses next?",
+        "inquisitive": "The history concludes with the **10th Anniversary** in **2024**, marking **over 8,000 professionals** trained. Would you like to proceed to the training programmes now?",
+        "narrative": "And so, the journey brings us to **2024**, where the school celebrated its **10th Anniversary**, a testament to the **over 8,000 professionals** it has empowered. The historical narrative is complete. Shall we explore the current programmes?",
+        "concise": "**2024**: Celebrated **10th Anniversary**, trained **over 8,000 professionals**. History finished. View training programmes?",
+        "encouraging": "What an inspiring journey! The **10th Anniversary** in **2024** celebrates training **over 8,000 professionals**. Ready to check out the current programmes?",
+        "playful": "Ta-da! **2024**! **10th Anniversary** and **8,000+ pros** trained! History mission complete! Time to look at the courses?"
+      },
+      "options": {
+        "yes": "programmes_menu",
+        "no": "exit_conversation"
+      }
+    },
+    "programmes_menu": {
+      "id": "programmes_menu",
+      "type": "choice",
+      "message": {
+        "base": "Moringa School provides specialized training in: **'Software Engineering'**, **'Data Science'**, **'Cyber Security'**, **'AI'**, and we offer a **'High School Bootcamp'**. Which subject area are you interested in?",
+        "formal": "Moringa School currently offers specialized training in five key domains: **'Software Engineering'**, **'Data Science'**, **'Cyber Security'**, **'AI'**, and a **'High School Bootcamp'**. Which domain is of interest to you?",
+        "casual": "Moringa's courses cover: **'Software Engineering'**, **'Data Science'**, **'Cyber Security'**, **'AI'**, plus a **'High School Bootcamp'**. Pick a topic!",
+        "humorous": "We've got the tech trifecta (plus two!): **'Software Engineering'**, **'Data Science'**, **'Cyber Security'**, **'AI'**, and a tiny **'High School Bootcamp'**. Which knowledge realm calls to you?",
+        "inquisitive": "The available training subjects are **'Software Engineering'**, **'Data Science'**, **'Cyber Security'**, **'AI'**, and the **'High School Bootcamp'**. Which of these would you like to explore?",
+        "narrative": "The learning pathways are clearly defined: **'Software Engineering'**, **'Data Science'**, **'Cyber Security'**, **'AI'**, and the next-generation **'High School Bootcamp'**. Which path will you choose to explore?",
+        "concise": "Available subjects: **'Software Engineering'**, **'Data Science'**, **'Cyber Security'**, **'AI'**, or **'High School Bootcamp'**.",
+        "encouraging": "You have many exciting options! Choose from **'Software Engineering'**, **'Data Science'**, **'Cyber Security'**, **'AI'**, or the **'High School Bootcamp'**!",
+        "playful": "Let's find your perfect course! Shall we explore **'Software Engineering'**, **'Data Science'**, **'Cyber Security'**, **'AI'**, or the **'High School Bootcamp'**?"
+      },
+      "options": {
+        "ai": "ai_course_1",
+        "ds": "ds_course_1",
+        "data science": "ds_course_1",
+        "data": "ds_course_1",
+        "se": "se_course_1",
+        "software development": "se_course_1",
+        "software engineering": "se_course_1",
+        "development": "se_course_1",
+        "engineering": "se_course_1",
+        "dev": "se_course_1",
+        "cyber security": "cs_course_1",
+        "cyber": "cs_course_1",
+        "security": "cs_course_1",
+        "highschool": "hs_course_1",
+        "younger": "hs_course_1"
+      }
+    },
+    "se_course_1": {
+      "id": "se_course_1",
+      "type": "course_loop",
+      "message": {
+        "base": "The first Software Engineering course is the **Introduction to Software Engineering**. This beginner-friendly course teaches essential skills in **coding HTML, CSS, JavaScript, web design, and test automation** through a hands-on learning experience. Would you like to hear about the next Software Engineering course, or say 'tell me more' for details?",
+        "formal": "The initial Software Engineering offering is the **Introduction to Software Engineering**. This course is designed for beginners, imparting core proficiencies in **HTML, CSS, JavaScript, web design, and test automation** via practical experience. Would you prefer to proceed to the next course, or request 'tell me more' for enrollment specifics?",
+        "casual": "Up first is the **Introduction to Software Engineering**. It's super beginner-friendly and gets you started with **HTML, CSS, JavaScript, web design, and test automation** with hands-on learning. Ready for the next one, or should I 'tell me more' about this one?",
+        "humorous": "Behold, the entry portal: **Introduction to Software Engineering**! It teaches you the secret handshake of the internet: **HTML, CSS, JavaScript, web design, and test automation**. Shall we move to the next level, or do you require more 'details'?",
+        "inquisitive": "The **Introduction to Software Engineering** course covers **HTML, CSS, JavaScript, web design, and test automation** for beginners. Would you like to review the next course, or 'tell me more' about the enrollment tracks for this one?",
+        "narrative": "Your journey in Software Engineering begins with the **Introduction to Software Engineering**, a foundational quest where you master the basics of **HTML, CSS, JavaScript, web design, and test automation**. Do you wish to hear of the next path, or 'tell me more' about this one?",
+        "concise": "**Introduction to Software Engineering**: Beginner course. Teaches **HTML, CSS, JavaScript, web design, test automation**. Next course, or 'tell me more'?",
+        "encouraging": "Start strong with the **Introduction to Software Engineering**! It’s perfect for beginners, teaching essential **HTML, CSS, JavaScript, web design, and test automation** skills. Want the next course, or 'tell me more'?",
+        "playful": "The **Introduction to Software Engineering** is where the magic begins! Learn **HTML, CSS, JavaScript, web design, and test automation**! Ready for the next course, or should I spill the 'details'?"
+      },
+      "options": {
+        "yes": "se_course_2",
+        "no": "programmes_menu",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "tell me more": "se_course_1_details"
+      }
+    },
+    "se_course_1_details": {
+      "id": "se_course_1_details",
+      "type": "info_reloop",
+      "message": {
+        "base": "Details: We have **two learning tracks** for 'Introduction to Software Enrollment'. The **Full-Time In-Person** track starts **January 12th, 2026** (100% In-Person, Mon-Fri). The **Full-Time Remote** course is **100% Online**. Both tracks are **5-weeks long**. The link is: https://moringaschool.com/courses/foundations-of-software-engineering/. Would you like to hear about the next Software Engineering course?",
+        "formal": "The 'Introduction to Software Enrollment' offers **two learning tracks**. The **Full-Time In-Person** track is scheduled to commence on **January 12th, 2026** (100% In-Person, Mon-Fri). The **Full-Time Remote** course is delivered **100% Online**. Both tracks span **5 weeks**. The program link is: https://moringaschool.com/courses/foundations-of-software-engineering/. Shall I present the subsequent Software Engineering course?",
+        "casual": "The **Introduction to Software** has **two tracks**: **Full-Time In-Person** starting **Jan 12th, 2026** (Mon-Fri) and **Full-Time Remote** (100% Online). Both are **5 weeks**. Find it here: https://moringaschool.com/courses/foundations-of-software-engineering/. Want the next course?",
+        "humorous": "The **Introduction to Software** has a twin! Choose **Full-Time In-Person** (starts **Jan 12th, 2026**, Mon-Fri) or **Full-Time Remote** (100% Online). Both are just **5 weeks** long! The portal is: https://moringaschool.com/courses/foundations-of-software-engineering/. Next course, or are you joining this one?",
+        "inquisitive": "For the Introduction course, there are **two 5-week tracks**: **Full-Time In-Person** (starting **Jan 12th, 2026**) and **Full-Time Remote** (100% Online). The link is provided. Would you like to proceed to the next Software Engineering course?",
+        "narrative": "The structure of the Introduction course is two-fold: a **Full-Time In-Person** path (starting **Jan 12th, 2026**) and a **Full-Time Remote** path, each lasting **5 weeks**. The next Software Engineering chapter awaits. Shall we continue?",
+        "concise": "**Intro to SE** Details: **Two 5-week tracks**. **Full-Time In-Person** (starts **Jan 12th, 2026**) or **Full-Time Remote** (100% Online). Link: https://moringaschool.com/courses/foundations-of-software-engineering/. Next course?",
+        "encouraging": "Great news! The Introduction course offers a **Full-Time In-Person** track (starting **Jan 12th, 2026**) and a **Full-Time Remote** track, both only **5 weeks**! That link is: https://moringaschool.com/courses/foundations-of-software-engineering/. Next course?",
+        "playful": "Intro course tracks: **Full-Time In-Person** (starts **Jan 12th, 2026**) or **Full-Time Remote**! Both are quick **5-week** sprints! Check the map: https://moringaschool.com/courses/foundations-of-software-engineering/. On to the next course!"
+      },
+      "options": {
+        "yes": "se_course_2",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "no": "programmes_menu"
+      }
+    },
+    "se_course_2": {
+      "id": "se_course_2",
+      "type": "course_loop",
+      "message": {
+        "base": "The second Software Engineering course is the **Full Stack Software Engineering Bootcamp**. This in-depth program equips you to build and deploy real-world web applications. You'll master **Python and JavaScript**, sharpen problem-solving, and gain experience with tools like **Git**. Would you like to hear about the next Software Engineering course, or say 'tell me more' for details?",
+        "formal": "The subsequent course is the **Full Stack Software Engineering Bootcamp**. This rigorous, project-based program focuses on the deployment of real-world web applications, mastery of **Python and JavaScript**, and proficiency with collaborative tools such as **Git**. Would you like to proceed to the next course, or request 'tell me more' for enrollment specifics?",
+        "casual": "Next up is the intensive **Full Stack Software Engineering Bootcamp**! You'll learn how to build and launch real web apps, master **Python and JavaScript**, and get hands-on with tools like **Git**. Next course, or 'tell me more'?",
+        "humorous": "Time for the advanced challenge: the **Full Stack Software Engineering Bootcamp**! You'll become a coding ninja with **Python, JavaScript**, and **Git**, deploying real web apps! More courses, or more 'details' about this one?",
+        "inquisitive": "The **Full Stack Software Engineering Bootcamp** is an intensive program covering **Python, JavaScript**, and **Git** for building and deploying web applications. What is the next course, or would you like to 'tell me more' about this bootcamp's tracks?",
+        "narrative": "The next stage is the **Full Stack Software Engineering Bootcamp**, an immersive experience where you acquire the skills to construct and deploy real web applications, focusing on **Python, JavaScript, and Git**. Do you wish to hear of the next path, or 'tell me more' about this one?",
+        "concise": "**Full Stack Software Engineering Bootcamp**: Build and deploy web apps. Master **Python, JavaScript, Git**. Next course, or 'tell me more'?",
+        "encouraging": "This bootcamp is your accelerator! The **Full Stack Software Engineering Bootcamp** lets you master **Python, JavaScript, and Git** to build real apps. Next course, or 'tell me more'?",
+        "playful": "Full Stack time! The **Full Stack Software Engineering Bootcamp** teaches you to code like a pro with **Python, JavaScript, and Git**! Next course, or 'details' on how to sign up?"
+      },
+      "options": {
+        "yes": "se_course_3",
+        "no": "programmes_menu",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "tell me more": "se_course_2_details"
+      }
+    },
+    "se_course_2_details": {
+      "id": "se_course_2_details",
+      "type": "info_reloop",
+      "message": {
+        "base": "Details: The **Full Stack Software Engineering Bootcamp** has **three learning tracks**, all starting **February 23rd, 2026**. **Full-Time Hybrid** (Online and Physical, Mon-Fri, **27 Weeks**). **Full-Time Remote** (100% Online, Mon-Fri, **27 Weeks**). **Part-Time Remote** (100% Online, Mon-Sat, **35 Weeks**). The link is: https://moringaschool.com/courses/software-engineering-full-stack-web-development/. Would you like to hear about the next Software Engineering course?",
+        "formal": "The **Full Stack Software Engineering Bootcamp** offers **three tracks**, all commencing **February 23rd, 2026**: **Full-Time Hybrid** (Online/Physical, Mon-Fri, **27 Weeks**), **Full-Time Remote** (100% Online, Mon-Fri, **27 Weeks**), and **Part-Time Remote** (100% Online, Mon-Sat, **35 Weeks**). The program link is: https://moringaschool.com/courses/software-engineering-full-stack-web-development/. Shall I proceed to the subsequent Software Engineering course?",
+        "casual": "The Full Stack Bootcamp has **three tracks** starting **Feb 23rd, 2026**: **Full-Time Hybrid** (27 Weeks), **Full-Time Remote** (27 Weeks, Online), and **Part-Time Remote** (35 Weeks, Online, Mon-Sat). Check it: https://moringaschool.com/courses/software-engineering-full-stack-web-development/. Ready for the next course?",
+        "humorous": "Full Stack Bootcamp has **three flavors**, all starting **Feb 23rd, 2026**! Choose **Full-Time Hybrid** (27 weeks), **Full-Time Remote** (27 weeks, 100% online), or the longer, Saturday-included **Part-Time Remote** (35 weeks). Link: https://moringaschool.com/courses/software-engineering-full-stack-web-development/. Next course, or still deciding?",
+        "inquisitive": "The Full Stack Bootcamp has **three tracks** (Hybrid, Full-Time Remote, Part-Time Remote), ranging from **27 to 35 weeks**, all starting **February 23rd, 2026**. The link is provided. Would you like to proceed to the next Software Engineering course?",
+        "narrative": "For the Full Stack Bootcamp, you have a choice of **three tracks**, each starting **February 23rd, 2026**, varying in duration from **27 to 35 weeks**. The next course awaits. Shall we continue?",
+        "concise": "**Full Stack Bootcamp** Details: **Three tracks** starting **Feb 23rd, 2026**. Hybrid or Remote, **27 or 35 weeks**. Link: https://moringaschool.com/courses/software-engineering-full-stack-web-development/. Next course?",
+        "encouraging": "The Full Stack Bootcamp offers flexible **Hybrid/Remote** options, from **27 to 35 weeks**, all starting **Feb 23rd, 2026**! That link is: https://moringaschool.com/courses/software-engineering-full-stack-web-development/. Next course?",
+        "playful": "Full Stack tracks: **3 options** starting **Feb 23rd, 2026**! Pick your duration: **27 weeks** Full-Time or **35 weeks** Part-Time! Check the map: https://moringaschool.com/courses/software-engineering-full-stack-web-development/. On to the next course!"
+      },
+      "options": {
+        "yes": "se_course_3",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "no": "programmes_menu"
+      }
+    },
+    "se_course_3": {
+      "id": "se_course_3",
+      "type": "course_loop",
+      "message": {
+        "base": "Next up is **Fundamentals of DevOps Engineering**. This course is for beginners and aspiring IT pros. You'll learn **core DevOps principles, CI/CD pipelines, Azure cloud basics, and Infrastructure as Code (IaC)**. Would you like to hear about the next Software Engineering course, or say 'tell me more' for details?",
+        "formal": "The next course is the **Fundamentals of DevOps Engineering**. Designed for aspiring IT professionals, it covers **core DevOps principles, CI/CD pipelines, Azure cloud fundamentals, and Infrastructure as Code (IaC)**. Would you prefer to proceed to the next course, or request 'tell me more' for enrollment specifics?",
+        "casual": "Let's talk **Fundamentals of DevOps Engineering**. This is a great starter for IT folks, teaching **DevOps principles, CI/CD, Azure cloud basics, and IaC**. Next course, or 'tell me more'?",
+        "humorous": "Level 3: **Fundamentals of DevOps Engineering**! Learn the secret language of automation: **DevOps, CI/CD pipelines, Azure cloud, and IaC**! Should we move on, or do you need the 'details'?",
+        "inquisitive": "The **Fundamentals of DevOps Engineering** is a beginner course covering **DevOps principles, CI/CD pipelines, Azure cloud basics, and IaC**. What is the next course, or would you like to 'tell me more' about this program's details?",
+        "narrative": "You may also choose the **Fundamentals of DevOps Engineering**, a foundational path to mastering **core DevOps principles, CI/CD pipelines, Azure cloud basics, and IaC**. Do you wish to hear of the next path, or 'tell me more' about this one?",
+        "concise": "**Fundamentals of DevOps Engineering**: Beginner course. Covers **DevOps, CI/CD, Azure cloud basics, IaC**. Next course, or 'tell me more'?",
+        "encouraging": "A great entry to DevOps! **Fundamentals of DevOps Engineering** teaches **DevOps principles, CI/CD, Azure, and IaC**. Next course, or 'tell me more'?",
+        "playful": "DevOps Starter Kit! **Fundamentals of DevOps Engineering** is a fun way to learn **DevOps, CI/CD, Azure, and IaC**! Next course, or 'details' on how to sign up?"
+      },
+      "options": {
+        "yes": "se_course_4",
+        "no": "programmes_menu",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "tell me more": "se_course_3_details"
+      }
+    },
+    "se_course_3_details": {
+      "id": "se_course_3_details",
+      "type": "info_reloop",
+      "message": {
+        "base": "Details: Enrollment for the **Part-Time Remote** 'Fundamentals of DevOps Engineering' course is ongoing. Classes will be **100% Online**, Monday to Friday, for a duration of **11 Weeks**. The link is: https://moringaschool.com/courses/devops-engineering/. Would you like to hear about the next Software Engineering course?",
+        "formal": "The 'Fundamentals of DevOps Engineering' is a **Part-Time Remote** course. Classes are conducted **100% Online**, Monday to Friday, spanning **11 Weeks**. The program link is: https://moringaschool.com/courses/devops-engineering/. Shall I proceed to the subsequent Software Engineering course?",
+        "casual": "The **Fundamentals of DevOps** is a **Part-Time Remote** course. It's **100% Online**, Mon-Fri, and lasts **11 Weeks**. Check it: https://moringaschool.com/courses/devops-engineering/. Ready for the next course?",
+        "humorous": "The **Fundamentals of DevOps** is a quick, **11-Week, Part-Time Remote** adventure, all **100% Online**! The secret lair is: https://moringaschool.com/courses/devops-engineering/. Next course, or still DevOps dreaming?",
+        "inquisitive": "The Fundamentals course is **11 Weeks** long, **Part-Time Remote**, and **100% Online** (Mon-Fri). The link is provided. Would you like to proceed to the next Software Engineering course?",
+        "narrative": "The structure of the Fundamentals course is a **Part-Time Remote** commitment, lasting **11 Weeks** and conducted **100% Online**. The next Software Engineering course awaits. Shall we continue?",
+        "concise": "**Fundamentals of DevOps** Details: **Part-Time Remote**, **11 Weeks**, **100% Online** (Mon-Fri). Link: https://moringaschool.com/courses/devops-engineering/. Next course?",
+        "encouraging": "The Fundamentals of DevOps is a manageable **11-Week, Part-Time Remote** course, all online! That link is: https://moringaschool.com/courses/devops-engineering/. Next course?",
+        "playful": "DevOps Fundamentals is a quick **11-week** journey, all online and part-time! Check the map: https://moringaschool.com/courses/devops-engineering/. On to the next course!"
+      },
+      "options": {
+        "yes": "se_course_4",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "no": "programmes_menu"
+      }
+    },
+    "se_course_4": {
+      "id": "se_course_4",
+      "type": "course_end",
+      "message": {
+        "base": "The last Software Engineering course is the **AWS DevOps Engineering BootCamp**. This advanced program teaches you to design, automate, and manage real-world cloud systems using **AWS**, and it prepares you for the **AWS Certified DevOps Engineer professional exam**. Would you like to go back to the Programmes Menu, or say 'tell me more' for details?",
+        "formal": "The final Software Engineering course is the **AWS DevOps Engineering BootCamp**. This advanced curriculum focuses on the design, automation, and management of real-world cloud systems utilizing **AWS**, and it provides preparation for the **AWS Certified DevOps Engineer professional exam**. Would you prefer to return to the Programmes Menu, or request 'tell me more' for enrollment specifics?",
+        "casual": "The final Software Engineering course is the **AWS DevOps Engineering BootCamp**. This advanced course teaches you to build cloud systems with **AWS** and even preps you for the **AWS Certified DevOps Engineer exam**. Back to the menu, or 'tell me more'?",
+        "humorous": "The final boss: the **AWS DevOps Engineering BootCamp**! You'll master cloud systems using **AWS** and get ready to crush the **AWS Certified DevOps Engineer exam**! Back to the menu, or 'details' on how to conquer this course?",
+        "inquisitive": "The **AWS DevOps Engineering BootCamp** is an advanced course on designing and managing cloud systems with **AWS**, including preparation for the professional exam. Would you like to return to the Programmes Menu, or 'tell me more' about the program's details?",
+        "narrative": "The pinnacle of this subject area is the **AWS DevOps Engineering BootCamp**, a path to designing and managing cloud systems with **AWS** and preparing for the professional exam. Do you wish to return to the menu, or 'tell me more' about this final path?",
+        "concise": "Last SE course: **AWS DevOps Engineering BootCamp**. Uses **AWS** to manage cloud systems, prepares for **AWS Certified DevOps Engineer exam**. Menu, or 'tell me more'?",
+        "encouraging": "Level up your career with the advanced **AWS DevOps Engineering BootCamp**! You'll master **AWS** and get ready for the professional exam! Back to the menu, or 'tell me more'?",
+        "playful": "Final course in SE: The **AWS DevOps Engineering BootCamp**! Learn the secrets of **AWS** and get that professional exam badge! Back to the menu, or 'details' on this course?"
+      },
+      "options": {
+        "yes": "programmes_menu",
+        "no": "exit_conversation",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "tell me more": "se_course_4_details"
+      }
+    },
+    "se_course_4_details": {
+      "id": "se_course_4_details",
+      "type": "info_reloop_end",
+      "message": {
+        "base": "Details: Enrollment for the **Part-Time Remote** 'AWS DevOps Engineering BootCamp' course is ongoing. Classes will be **100% Online**, Monday to Friday, for a duration of **10 Weeks**. The link is: https://moringaschool.com/courses/aws-devops-engineering-bootcamp/. Would you like to go back to the Programmes Menu?",
+        "formal": "The 'AWS DevOps Engineering BootCamp' is a **Part-Time Remote** course. Classes are conducted **100% Online**, Monday to Friday, spanning **10 Weeks**. The program link is: https://moringaschool.com/courses/aws-devops-engineering-bootcamp/. Shall I return you to the Programmes Menu?",
+        "casual": "The **AWS DevOps Bootcamp** is a **Part-Time Remote** course. It's **100% Online**, Mon-Fri, and runs for **10 Weeks**. Check it: https://moringaschool.com/courses/aws-devops-engineering-bootcamp/. Back to the menu?",
+        "humorous": "The **AWS DevOps Bootcamp** is a speedy **10-Week, Part-Time Remote** challenge, all **100% Online**! The link to the cloud is: https://moringaschool.com/courses/aws-devops-engineering-bootcamp/. Back to the menu, or are you packing for the cloud?",
+        "inquisitive": "The AWS DevOps Bootcamp is **10 Weeks** long, **Part-Time Remote**, and **100% Online** (Mon-Fri). The link is provided. Would you like to return to the Programmes Menu?",
+        "narrative": "The structure of the AWS DevOps Bootcamp is a **Part-Time Remote** commitment, lasting **10 Weeks** and conducted **100% Online**. We have reached the end of this subject area. Shall we return to the menu?",
+        "concise": "**AWS DevOps Bootcamp** Details: **Part-Time Remote**, **10 Weeks**, **100% Online** (Mon-Fri). Link: https://moringaschool.com/courses/aws-devops-engineering-bootcamp/. Menu?",
+        "encouraging": "The AWS DevOps Bootcamp is a quick **10-Week, Part-Time Remote** course, all online! That link is: https://moringaschool.com/courses/aws-devops-engineering-bootcamp/. Back to the menu?",
+        "playful": "AWS Bootcamp is a fast **10-week** journey, all online and part-time! Check the map: https://moringaschool.com/courses/aws-devops-engineering-bootcamp/. On to the menu!"
+      },
+      "options": {
+        "yes": "programmes_menu",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "no": "exit_conversation"
+      }
+    },
+    "ds_course_1": {
+      "id": "ds_course_1",
+      "type": "course_loop",
+      "message": {
+        "base": "The first Data Science course is **Data Analytics with Excel and Power BI**. This beginner-friendly course is for graduates and professionals, covering **Excel, Power BI, SQL, and AI tools** for data analysis, complete with a **Microsoft Power BI certification**. Would you like to hear about the next Data Science course, or say 'tell me more' for details?",
+        "formal": "The inaugural Data Science course is **Data Analytics with Excel and Power BI**. This beginner-level offering for graduates and professionals covers **Excel, Power BI, SQL, and AI tools** for analysis, culminating in a **Microsoft Power BI certification**. Would you prefer to proceed to the next course, or request 'tell me more' for enrollment specifics?",
+        "casual": "First up: **Data Analytics with Excel and Power BI**. It's beginner-friendly, and you'll master **Excel, Power BI, SQL, and AI tools** for data analysis, plus you get a **Microsoft Power BI cert**! Next course, or 'tell me more'?",
+        "humorous": "The data quest begins with **Data Analytics with Excel and Power BI**! It's an easy start, teaching you to tame data with **Excel, Power BI, SQL, and AI tools**, and you get a shiny **Microsoft cert**! Ready for the next data adventure, or need the 'details'?",
+        "inquisitive": "The **Data Analytics with Excel and Power BI** course covers **Excel, Power BI, SQL, and AI tools** for analysis and includes a **Microsoft Power BI certification**. What is the next course, or would you like to 'tell me more' about this program's details?",
+        "narrative": "The first data path is **Data Analytics with Excel and Power BI**, where you learn to harness **Excel, Power BI, SQL, and AI tools** for insightful analysis, earning a **Microsoft Power BI certification**. Do you wish to hear of the next path, or 'tell me more' about this one?",
+        "concise": "**Data Analytics with Excel and Power BI**: Beginner course. Covers **Excel, Power BI, SQL, AI tools**, includes **Microsoft Power BI cert**. Next course, or 'tell me more'?",
+        "encouraging": "A great starting point! **Data Analytics with Excel and Power BI** teaches essential tools and gives you a **Microsoft Power BI cert**! Want the next course, or 'tell me more'?",
+        "playful": "Data fun time! **Data Analytics with Excel and Power BI**! Learn **Excel, Power BI, SQL, and AI tools**, and grab a **Microsoft cert**! Next course, or 'details' on how to sign up?"
+      },
+      "options": {
+        "yes": "ds_course_2",
+        "no": "programmes_menu",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "tell me more": "ds_course_1_details"
+      }
+    },
+    "ds_course_1_details": {
+      "id": "ds_course_1_details",
+      "type": "info_reloop",
+      "message": {
+        "base": "Details: Enrollment for the **Part-Time Remote** 'Data Analytics with Excel and Power BI' course is ongoing. Classes will be **100% Online**, Monday to Friday, for a duration of **14 Weeks**. The link is: https://moringaschool.com/courses/data-analytics-with-powerbi-excel/. Would you like to hear about the next Data Science course?",
+        "formal": "The 'Data Analytics with Excel and Power BI' is a **Part-Time Remote** course. Classes are conducted **100% Online**, Monday to Friday, spanning **14 Weeks**. The program link is: https://moringaschool.com/courses/data-analytics-with-powerbi-excel/. Shall I present the subsequent Data Science course?",
+        "casual": "The **Data Analytics** course is **Part-Time Remote**. It's **100% Online**, Mon-Fri, and lasts **14 Weeks**. Check it: https://moringaschool.com/courses/data-analytics-with-powerbi-excel/. Ready for the next course?",
+        "humorous": "The **Data Analytics** course is a **14-Week, Part-Time Remote** marathon, all **100% Online**! The data portal is: https://moringaschool.com/courses/data-analytics-with-powerbi-excel/. Next course, or more data fun?",
+        "inquisitive": "The Data Analytics course is **14 Weeks** long, **Part-Time Remote**, and **100% Online** (Mon-Fri). The link is provided. Would you like to proceed to the next Data Science course?",
+        "narrative": "The structure of the Data Analytics course is a **Part-Time Remote** commitment, lasting **14 Weeks** and conducted **100% Online**. The next Data Science chapter awaits. Shall we continue?",
+        "concise": "**Data Analytics** Details: **Part-Time Remote**, **14 Weeks**, **100% Online** (Mon-Fri). Link: https://moringaschool.com/courses/data-analytics-with-powerbi-excel/. Next course?",
+        "encouraging": "The Data Analytics course is a flexible **14-Week, Part-Time Remote** course, all online! That link is: https://moringaschool.com/courses/data-analytics-with-powerbi-excel/. Next course?",
+        "playful": "Data Analytics is a **14-week** part-time online adventure! Check the map: https://moringaschool.com/courses/data-analytics-with-powerbi-excel/. On to the next course!"
+      },
+      "options": {
+        "yes": "ds_course_2",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "no": "programmes_menu"
+      }
+    },
+    "ds_course_2": {
+      "id": "ds_course_2",
+      "type": "course_loop",
+      "message": {
+        "base": "Next is the **Data Visualization with Python** course. This is perfect for beginners, teaching you to **analyze data, create interactive dashboards, and present insights using Python**. It gives you the fundamentals to upskill with the Data Science Bootcamp. Would you like to hear about the next Data Science course, or say 'tell me more' for details?",
+        "formal": "The subsequent offering is **Data Visualization with Python**. This course is designed for beginners and teaches the use of **Python** to **analyze data, create interactive dashboards, and present data insights**. It provides the foundational knowledge for the Data Science Bootcamp. Would you prefer to proceed to the next course, or request 'tell me more' for enrollment specifics?",
+        "casual": "Check out **Data Visualization with Python**. It's a beginner course where you'll learn to **analyze data, make cool dashboards, and present insights using Python**. It's a great intro for the full Bootcamp! Next course, or 'tell me more'?",
+        "humorous": "Time to make the data pretty! **Data Visualization with Python** teaches you to draw pictures with your data, create magic dashboards, and master **Python**. Shall we move to the next course, or do you need the 'details'?",
+        "inquisitive": "The **Data Visualization with Python** course is for beginners and teaches data analysis, dashboard creation, and insight presentation using **Python**. What is the next course, or would you like to 'tell me more' about this program's details?",
+        "narrative": "The next step is **Data Visualization with Python**, a course for beginners where you master the art of data presentation using **Python** to create interactive dashboards. Do you wish to hear of the next path, or 'tell me more' about this one?",
+        "concise": "**Data Visualization with Python**: Beginner course. Learn to **analyze data, create dashboards, present insights using Python**. Next course, or 'tell me more'?",
+        "encouraging": "Python's your friend here! **Data Visualization with Python** teaches you to turn data into compelling stories. Next course, or 'tell me more'?",
+        "playful": "Let's draw with data! **Data Visualization with Python** is a fun way to learn **Python** and make cool dashboards! Next course, or 'details' on how to sign up?"
+      },
+      "options": {
+        "yes": "ds_course_3",
+        "no": "programmes_menu",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "tell me more": "ds_course_2_details"
+      }
+    },
+    "ds_course_2_details": {
+      "id": "ds_course_2_details",
+      "type": "info_reloop",
+      "message": {
+        "base": "Details: Enrollment for the **Part-Time Remote** 'Data Visualization with Python' course is ongoing. Classes will be **100% Online**, Monday to Friday, for a duration of **13 Weeks**. The link is: https://moringaschool.com/courses/data-visualization-with-python/. Would you like to hear about the next Data Science course?",
+        "formal": "The 'Data Visualization with Python' is a **Part-Time Remote** course. Classes are conducted **100% Online**, Monday to Friday, spanning **13 Weeks**. The program link is: https://moringaschool.com/courses/data-visualization-with-python/. Shall I present the subsequent Data Science course?",
+        "casual": "The **Data Viz with Python** course is **Part-Time Remote**. It's **100% Online**, Mon-Fri, and lasts **13 Weeks**. Check it: https://moringaschool.com/courses/data-visualization-with-python/. Ready for the next course?",
+        "humorous": "The **Data Viz with Python** course is a fun, **13-Week, Part-Time Remote** visual feast, all **100% Online**! The gallery is: https://moringaschool.com/courses/data-visualization-with-python/. Next course, or more Python fun?",
+        "inquisitive": "The Data Viz course is **13 Weeks** long, **Part-Time Remote**, and **100% Online** (Mon-Fri). The link is provided. Would you like to proceed to the next Data Science course?",
+        "narrative": "The structure of the Data Viz course is a **Part-Time Remote** commitment, lasting **13 Weeks** and conducted **100% Online**. The next Data Science chapter awaits. Shall we continue?",
+        "concise": "**Data Viz with Python** Details: **Part-Time Remote**, **13 Weeks**, **100% Online** (Mon-Fri). Link: https://moringaschool.com/courses/data-visualization-with-python/. Next course?",
+        "encouraging": "Data Viz with Python is a flexible **13-Week, Part-Time Remote** course, all online! That link is: https://moringaschool.com/courses/data-visualization-with-python/. Next course?",
+        "playful": "Data Viz is a cool **13-week** part-time online visual journey! Check the map: https://moringaschool.com/courses/data-visualization-with-python/. On to the next course!"
+      },
+      "options": {
+        "yes": "ds_course_3",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "no": "programmes_menu"
+      }
+    },
+    "ds_course_3": {
+      "id": "ds_course_3",
+      "type": "course_loop",
+      "message": {
+        "base": "Next up is **Introduction to Data Science**. This is a beginner-friendly course where you learn skills in **Python and Google Colab from scratch**, building a foundation for the Data Science Bootcamp. No prior programming experience is required. Would you like to hear about the next Data Science course, or say 'tell me more' for details?",
+        "formal": "The next course is the **Introduction to Data Science**. This beginner-friendly program teaches proficiency in **Python and Google Colab from scratch**, serving as a foundation for the Data Science Bootcamp. No prerequisite programming experience is required. Would you prefer to proceed to the next course, or request 'tell me more' for enrollment specifics?",
+        "casual": "Let's talk **Introduction to Data Science**. It's for beginners, and you'll learn **Python and Google Colab from scratch**—no coding experience needed! It's the perfect prep for the Bootcamp. Next course, or 'tell me more'?",
+        "humorous": "The data warm-up: **Introduction to Data Science**! It teaches you to speak **Python** using the magic tool, **Google Colab**, even if you've never coded before! Next level, or more 'details'?",
+        "inquisitive": "The **Introduction to Data Science** course teaches **Python and Google Colab from scratch** and requires no prior programming. What is the next course, or would you like to 'tell me more' about this program's details?",
+        "narrative": "You may also choose the **Introduction to Data Science**, a foundational course where you begin your journey with **Python and Google Colab** with no prior experience necessary. Do you wish to hear of the next path, or 'tell me more' about this one?",
+        "concise": "**Introduction to Data Science**: Beginner course. Learn **Python and Google Colab from scratch**. No prior coding needed. Next course, or 'tell me more'?",
+        "encouraging": "This is a perfect start! **Introduction to Data Science** teaches **Python and Google Colab** from zero experience. Next course, or 'tell me more'?",
+        "playful": "Intro to Data Science is where you learn the secret code: **Python and Google Colab**! No experience? No problem! Next course, or 'details' on how to sign up?"
+      },
+      "options": {
+        "yes": "ds_course_4",
+        "no": "programmes_menu",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "tell me more": "ds_course_3_details"
+      }
+    },
+    "ds_course_3_details": {
+      "id": "ds_course_3_details",
+      "type": "info_reloop",
+      "message": {
+        "base": "Details: The **Introduction to Data Science** has **two learning tracks**, both starting **January 12th, 2026**. **Full-Time Remote** (100% Online, Mon-Fri, **6 weeks**). **Part-Time Remote** (100% Online, Mon-Fri, **9 weeks**). The link is: https://moringaschool.com/courses/introduction-to-data-science/. Would you like to hear about the next Data Science course?",
+        "formal": "The 'Introduction to Data Science' offers **two remote learning tracks**, both commencing **January 12th, 2026**: **Full-Time Remote** (100% Online, Mon-Fri, **6 weeks**) and **Part-Time Remote** (100% Online, Mon-Fri, **9 weeks**). The program link is: https://moringaschool.com/courses/introduction-to-data-science/. Shall I present the subsequent Data Science course?",
+        "casual": "The **Intro to Data Science** has **two remote tracks** starting **Jan 12th, 2026**: **Full-Time** (6 weeks) or **Part-Time** (9 weeks). Both are 100% Online, Mon-Fri. Check it: https://moringaschool.com/courses/introduction-to-data-science/. Ready for the next course?",
+        "humorous": "Intro to Data Science has a speedy track (**6 weeks**) and a chill track (**9 weeks**), both starting **Jan 12th, 2026**! Both are 100% online. The secret code is: https://moringaschool.com/courses/introduction-to-data-science/. Next course, or more intro fun?",
+        "inquisitive": "The Introduction course has **two remote tracks** (6-week Full-Time, 9-week Part-Time), both starting **January 12th, 2026**. The link is provided. Would you like to proceed to the next Data Science course?",
+        "narrative": "The structure of the Introduction course offers two remote commitments: a **6-week Full-Time** path and a **9-week Part-Time** path, both starting **January 12th, 2026**. The next Data Science chapter awaits. Shall we continue?",
+        "concise": "**Intro to DS** Details: **Two remote tracks** starting **Jan 12th, 2026**. **6 weeks** (FT) or **9 weeks** (PT). Link: https://moringaschool.com/courses/introduction-to-data-science/. Next course?",
+        "encouraging": "The Intro to Data Science is flexible: **6-week Full-Time** or **9-week Part-Time**, both starting **Jan 12th, 2026**! That link is: https://moringaschool.com/courses/introduction-to-data-science/. Next course?",
+        "playful": "Intro to DS tracks: **6-week FT** or **9-week PT**, both starting **Jan 12th, 2026**! Check the map: https://moringaschool.com/courses/introduction-to-data-science/. On to the next course!"
+      },
+      "options": {
+        "yes": "ds_course_4",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "no": "programmes_menu"
+      }
+    },
+    "ds_course_4": {
+      "id": "ds_course_4",
+      "type": "course_end",
+      "message": {
+        "base": "The last Data Science course is the **Data Science Bootcamp**. This comprehensive program is for individuals with a background in **technology, mathematics, or related fields**. You will deepen your expertise in **advanced analytics, machine learning, AI fundamentals, and data modeling using Python**. Would you like to go back to the Programmes Menu, or say 'tell me more' for details?",
+        "formal": "The final Data Science course is the **Data Science Bootcamp**. This comprehensive program requires a background in **technology, mathematics, or related fields**. It focuses on advanced expertise in **analytics, machine learning, AI fundamentals, and data modeling using Python**. Would you prefer to return to the Programmes Menu, or request 'tell me more' for enrollment specifics?",
+        "casual": "The last Data Science course is the **Data Science Bootcamp**. You need a background in **tech or math** for this one. You'll dive deep into **advanced analytics, machine learning, AI, and Python data modeling**. Back to the menu, or 'tell me more'?",
+        "humorous": "The final frontier: the **Data Science Bootcamp**! If you're a **tech/math whiz**, you'll master **advanced analytics, machine learning, AI, and Python data modeling**! Back to the menu, or 'details' on how to conquer this course?",
+        "inquisitive": "The **Data Science Bootcamp** is an advanced program requiring a background in tech/math, covering **advanced analytics, machine learning, AI, and Python data modeling**. Would you like to return to the Programmes Menu, or 'tell me more' about the program's tracks?",
+        "narrative": "The pinnacle of this subject area is the **Data Science Bootcamp**, a path for those with a **tech or math background** to master **advanced analytics, machine learning, AI, and data modeling**. Do you wish to return to the menu, or 'tell me more' about this final path?",
+        "concise": "Last DS course: **Data Science Bootcamp**. Requires **tech/math background**. Covers **advanced analytics, ML, AI, Python data modeling**. Menu, or 'tell me more'?",
+        "encouraging": "Ready for the big leap? The **Data Science Bootcamp** is an in-depth program for those with a tech background, covering everything from **advanced analytics to AI**! Back to the menu, or 'tell me more'?",
+        "playful": "Final course in DS: The **Data Science Bootcamp**! It's for the **tech/math experts**! Master **advanced analytics, AI, and Python**! Back to the menu, or 'details' on this course?"
+      },
+      "options": {
+        "yes": "programmes_menu",
+        "no": "exit_conversation",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "tell me more": "ds_course_4_details"
+      }
+    },
+    "ds_course_4_details": {
+      "id": "ds_course_4_details",
+      "type": "info_reloop_end",
+      "message": {
+        "base": "Details: The **Data Science Bootcamp** has **three learning tracks**, all starting **March 2nd, 2026**. **Full-Time Hybrid** (Online and Physical, Mon-Fri, **26 weeks**). **Full-Time Remote** (100% Online, Mon-Fri, **26 weeks**). **Part-Time Remote** (100% Online, Mon-Sat, **36 weeks**). The link is: https://moringaschool.com/courses/data-science/. Would you like to go back to the Programmes Menu?",
+        "formal": "The **Data Science Bootcamp** offers **three tracks**, all commencing **March 2nd, 2026**: **Full-Time Hybrid** (Online/Physical, Mon-Fri, **26 weeks**), **Full-Time Remote** (100% Online, Mon-Fri, **26 weeks**), and **Part-Time Remote** (100% Online, Mon-Sat, **36 weeks**). The program link is: https://moringaschool.com/courses/data-science/. Shall I return you to the Programmes Menu?",
+        "casual": "The Data Science Bootcamp has **three tracks** starting **March 2nd, 2026**: **Full-Time Hybrid** (26 Weeks), **Full-Time Remote** (26 Weeks, Online), and **Part-Time Remote** (36 Weeks, Online, Mon-Sat). Check it: https://moringaschool.com/courses/data-science/. Back to the menu?",
+        "humorous": "Data Science Bootcamp has **three awesome tracks**, all starting **March 2nd, 2026**! Choose **Full-Time Hybrid** (26 weeks), **Full-Time Remote** (26 weeks, 100% online), or the weekend-included **Part-Time Remote** (36 weeks). Link: https://moringaschool.com/courses/data-science/. Back to the menu, or still data-crunching?",
+        "inquisitive": "The Data Science Bootcamp has **three tracks** (Hybrid, Full-Time Remote, Part-Time Remote), ranging from **26 to 36 weeks**, all starting **March 2nd, 2026**. The link is provided. Would you like to return to the Programmes Menu?",
+        "narrative": "For the Data Science Bootcamp, you have a choice of **three tracks**, each starting **March 2nd, 2026**, varying in duration from **26 to 36 weeks**. We have reached the end of this subject area. Shall we return to the menu?",
+        "concise": "**DS Bootcamp** Details: **Three tracks** starting **March 2nd, 2026**. Hybrid or Remote, **26 or 36 weeks**. Link: https://moringaschool.com/courses/data-science/. Menu?",
+        "encouraging": "The Data Science Bootcamp offers flexible **Hybrid/Remote** options, from **26 to 36 weeks**, all starting **March 2nd, 2026**! That link is: https://moringaschool.com/courses/data-science/. Back to the menu?",
+        "playful": "DS Bootcamp tracks: **3 options** starting **March 2nd, 2026**! Pick your duration: **26 weeks** Full-Time or **36 weeks** Part-Time! Check the map: https://moringaschool.com/courses/data-science/. On to the menu!"
+      },
+      "options": {
+        "yes": "programmes_menu",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "no": "exit_conversation"
+      }
+    },
+    "cs_course_1": {
+      "id": "cs_course_1",
+      "type": "course_loop",
+      "message": {
+        "base": "The first Cyber Security course is **Introduction to Cybersecurity**. This beginner-friendly course teaches a strong foundation in cybersecurity from **networking and cryptography to incident response**, plus how **AI is transforming the field**. No prior experience is required. Would you like to hear about the next Cyber Security course, or say 'tell me more' for details?",
+        "formal": "The inaugural Cyber Security course is the **Introduction to Cybersecurity**. This beginner-level program provides a robust foundation, covering subjects from **networking and cryptography to incident response**, with a focus on the role of **AI**. No prerequisite experience is required. Would you prefer to proceed to the next course, or request 'tell me more' for enrollment specifics?",
+        "casual": "First up is the **Introduction to Cybersecurity**. It's beginner-friendly and covers everything from **networking and cryptography to incident response**, and how **AI** is changing the game. No experience needed! Next course, or 'tell me more'?",
+        "humorous": "The cyber guard training starts with **Introduction to Cybersecurity**! Learn to fight bad guys with **networking, cryptography, and incident response**, plus the future of defense with **AI**! Shall we move to the next course, or do you require more 'details'?",
+        "inquisitive": "The **Introduction to Cybersecurity** course covers **networking, cryptography, incident response, and AI in the field** for beginners with no prior experience. What is the next course, or would you like to 'tell me more' about this program's details?",
+        "narrative": "Your path to cybersecurity begins with the **Introduction to Cybersecurity**, a foundational quest where you master **networking, cryptography, incident response, and the power of AI**. Do you wish to hear of the next path, or 'tell me more' about this one?",
+        "concise": "**Introduction to Cybersecurity**: Beginner course. Covers **networking, cryptography, incident response, AI**. No prior experience needed. Next course, or 'tell me more'?",
+        "encouraging": "Start your defense career strong with the **Introduction to Cybersecurity**! It teaches a solid foundation from **networking to AI**! Want the next course, or 'tell me more'?",
+        "playful": "Intro to Cyber is where you become a digital hero! Learn **networking, cryptography, incident response, and AI**! Next course, or 'details' on how to sign up?"
+      },
+      "options": {
+        "yes": "cs_course_2",
+        "no": "programmes_menu",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "tell me more": "cs_course_1_details"
+      }
+    },
+    "cs_course_1_details": {
+      "id": "cs_course_1_details",
+      "type": "info_reloop",
+      "message": {
+        "base": "Details: The **Introduction to Cybersecurity** has **two Remote learning tracks**, both starting **January 12th, 2026**. **Full-Time Remote** (100% Online, Mon-Fri, **5 weeks**). **Part-Time Remote** (100% Online, Mon-Fri, **11 weeks**). The link is: https://moringaschool.com/courses/introduction-to-cybersecurity/. Would you like to hear about the next Cyber Security course?",
+        "formal": "The 'Introduction to Cybersecurity' offers **two Remote learning tracks**, both commencing **January 12th, 2026**: **Full-Time Remote** (100% Online, Mon-Fri, **5 weeks**) and **Part-Time Remote** (100% Online, Mon-Fri, **11 weeks**). The program link is: https://moringaschool.com/courses/introduction-to-cybersecurity/. Shall I present the subsequent Cyber Security course?",
+        "casual": "The **Intro to Cyber** has **two remote tracks** starting **Jan 12th, 2026**: **Full-Time** (5 weeks) or **Part-Time** (11 weeks). Both are 100% Online, Mon-Fri. Check it: https://moringaschool.com/courses/introduction-to-cybersecurity/. Ready for the next course?",
+        "humorous": "Intro to Cyber has a super-speedy track (**5 weeks**) and a slightly longer track (**11 weeks**), both starting **Jan 12th, 2026**! Both are 100% online. The secret code is: https://moringaschool.com/courses/introduction-to-cybersecurity/. Next course, or more cyber fun?",
+        "inquisitive": "The Introduction course has **two remote tracks** (5-week Full-Time, 11-week Part-Time), both starting **January 12th, 2026**. The link is provided. Would you like to proceed to the next Cyber Security course?",
+        "narrative": "The structure of the Introduction course offers two remote commitments: a **5-week Full-Time** path and an **11-week Part-Time** path, both starting **January 12th, 2026**. The next Cyber Security chapter awaits. Shall we continue?",
+        "concise": "**Intro to Cyber** Details: **Two remote tracks** starting **Jan 12th, 2026**. **5 weeks** (FT) or **11 weeks** (PT). Link: https://moringaschool.com/courses/introduction-to-cybersecurity/. Next course?",
+        "encouraging": "The Intro to Cyber is flexible: **5-week Full-Time** or **11-week Part-Time**, both starting **Jan 12th, 2026**! That link is: https://moringaschool.com/courses/introduction-to-cybersecurity/. Next course?",
+        "playful": "Intro to Cyber tracks: **5-week FT** or **11-week PT**, both starting **Jan 12th, 2026**! Check the map: https://moringaschool.com/courses/introduction-to-cybersecurity/. On to the next course!"
+      },
+      "options": {
+        "yes": "cs_course_2",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "no": "programmes_menu"
+      }
+    },
+    "cs_course_2": {
+      "id": "cs_course_2",
+      "type": "course_end",
+      "message": {
+        "base": "The last Cyber Security course is the **Cybersecurity Bootcamp**. This comprehensive program is ideal for **IT and tech professionals** ready to level up. You’ll master hands-on skills for roles like **Cybersecurity Analyst, SOC Analyst, Penetration Tester, or Incident Response Specialist**. Would you like to go back to the Programmes Menu, or say 'tell me more' for details?",
+        "formal": "The final Cyber Security course is the **Cybersecurity Bootcamp**. This comprehensive program is optimal for **IT and tech professionals** seeking advancement. Proficiency is developed in skills relevant to roles such as **Cybersecurity Analyst, SOC Analyst, Penetration Tester, and Incident Response Specialist**. Would you prefer to return to the Programmes Menu, or request 'tell me more' for enrollment specifics?",
+        "casual": "The final Cyber course is the **Cybersecurity Bootcamp**. It's for **current IT/tech professionals** who want to learn hands-on skills for jobs like **Penetration Tester or Incident Response Specialist**. Back to the menu, or 'tell me more'?",
+        "humorous": "The grand Cyber finale: the **Cybersecurity Bootcamp**! Level up your tech powers to become a **Penetration Tester** or **Incident Response Specialist**! Back to the menu, or 'details' on how to become a cyber superhero?",
+        "inquisitive": "The **Cybersecurity Bootcamp** is an advanced program for IT/tech professionals, preparing them for roles like **Penetration Tester and Incident Response Specialist**. Would you like to return to the Programmes Menu, or 'tell me more' about the program's tracks?",
+        "narrative": "The culmination of this subject area is the **Cybersecurity Bootcamp**, a path for **IT and tech professionals** to master the advanced skills needed for expert roles like **Penetration Tester**. Do you wish to return to the menu, or 'tell me more' about this final path?",
+        "concise": "Last CS course: **Cybersecurity Bootcamp**. For **IT/tech professionals**. Prepares for roles like **Penetration Tester, Incident Response Specialist**. Menu, or 'tell me more'?",
+        "encouraging": "Ready to specialize? The **Cybersecurity Bootcamp** is an in-depth program for tech pros, covering advanced roles like **Penetration Tester**! Back to the menu, or 'tell me more'?",
+        "playful": "Final course in Cyber: The **Cybersecurity Bootcamp**! Time to train for cool jobs like **Penetration Tester**! Back to the menu, or 'details' on this course?"
+      },
+      "options": {
+        "yes": "programmes_menu",
+        "no": "exit_conversation",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "tell me more": "cs_course_2_details"
+      }
+    },
+    "cs_course_2_details": {
+      "id": "cs_course_2_details",
+      "type": "info_reloop_end",
+      "message": {
+        "base": "Details: The **Cybersecurity Bootcamp** has **two Remote learning tracks**, both starting **March 9th, 2026**. **Full-Time Remote** (100% Online, Mon-Fri, **26 weeks**). **Part-Time Remote** (100% Online, Mon-Fri, **32 weeks**). The link is: https://moringaschool.com/courses/cybersecurity-bootcamp/. Would you like to go back to the Programmes Menu?",
+        "formal": "The **Cybersecurity Bootcamp** offers **two Remote tracks**, both commencing **March 9th, 2026**: **Full-Time Remote** (100% Online, Mon-Fri, **26 weeks**) and **Part-Time Remote** (100% Online, Mon-Fri, **32 weeks**). The program link is: https://moringaschool.com/courses/cybersecurity-bootcamp/. Shall I return you to the Programmes Menu?",
+        "casual": "The Cyber Bootcamp has **two remote tracks** starting **March 9th, 2026**: **Full-Time** (26 Weeks) or **Part-Time** (32 Weeks). Both are 100% Online, Mon-Fri. Check it: https://moringaschool.com/courses/cybersecurity-bootcamp/. Back to the menu?",
+        "humorous": "Cyber Bootcamp has a **26-week** speedy track and a **32-week** part-time track, both starting **March 9th, 2026**! Both are 100% online. The secret vault is: https://moringaschool.com/courses/cybersecurity-bootcamp/. Back to the menu, or still hacking?",
+        "inquisitive": "The Cyber Bootcamp has **two remote tracks** (26-week Full-Time, 32-week Part-Time), both starting **March 9th, 2026**. The link is provided. Would you like to return to the Programmes Menu?",
+        "narrative": "The structure of the Cyber Bootcamp offers two remote commitments: a **26-week Full-Time** path and a **32-week Part-Time** path, both starting **March 9th, 2026**. We have reached the end of this subject area. Shall we return to the menu?",
+        "concise": "**Cyber Bootcamp** Details: **Two remote tracks** starting **March 9th, 2026**. **26 weeks** (FT) or **32 weeks** (PT). Link: https://moringaschool.com/courses/cybersecurity-bootcamp/. Menu?",
+        "encouraging": "The Cyber Bootcamp is flexible: **26-week Full-Time** or **32-week Part-Time**, both starting **March 9th, 2026**! That link is: https://moringaschool.com/courses/cybersecurity-bootcamp/. Back to the menu?",
+        "playful": "Cyber Bootcamp tracks: **2 options** starting **March 9th, 2026**! Pick your duration: **26 weeks** Full-Time or **32 weeks** Part-Time! Check the map: https://moringaschool.com/courses/cybersecurity-bootcamp/. On to the menu!"
+      },
+      "options": {
+        "yes": "programmes_menu",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "no": "exit_conversation"
+      }
+    },
+    "ai_course_1": {
+      "id": "ai_course_1",
+      "type": "course_end",
+      "message": {
+        "base": "The only AI course available is **Generative AI Essentials**. This **2-week, hands-on program** is for busy professionals to boost productivity. You’ll learn to use Gen AI to **write smarter, analyze faster, and automate tasks**—**no technical background required**. Would you like to go back to the Programmes Menu, or say 'tell me more' for details?",
+        "formal": "The solitary AI course offered is **Generative AI Essentials**. This **2-week, practical program** is structured for professionals to enhance productivity. It focuses on utilizing Gen AI for **improved writing, faster analysis, and task automation**—**no technical background is necessary**. Would you prefer to return to the Programmes Menu, or request 'tell me more' for enrollment specifics?",
+        "casual": "We've only got one AI course: **Generative AI Essentials**. It's a quick **2-week program** for busy pros to learn to use Gen AI to **write and analyze smarter**—you don't need a tech background! Back to the menu, or 'tell me more'?",
+        "humorous": "The entire AI section is the **Generative AI Essentials** course! It's a lightning-fast **2-week** sprint for non-tech folks to make Gen AI do the work for them (**write smarter, analyze faster**). Back to the menu, or 'details' on how to unlock your AI powers?",
+        "inquisitive": "The **Generative AI Essentials** course is a **2-week, non-technical program** for professionals to learn Gen AI for **writing, analysis, and automation**. Would you like to return to the Programmes Menu, or 'tell me more' about the program's details?",
+        "narrative": "The single AI course on offer is **Generative AI Essentials**, a **2-week** path to utilizing Gen AI to **write smarter, analyze faster, and automate tasks** for busy professionals. Do you wish to return to the menu, or 'tell me more' about this final path?",
+        "concise": "Only AI course: **Generative AI Essentials**. **2 weeks**, for professionals, teaches Gen AI for **writing, analysis, automation**. **No tech background needed**. Menu, or 'tell me more'?",
+        "encouraging": "Unlock AI's power with **Generative AI Essentials**! A quick **2-week** course to boost your productivity—no technical skills required! Back to the menu, or 'tell me more'?",
+        "playful": "The one and only AI course: **Generative AI Essentials**! Learn to make Gen AI your digital assistant in just **2 weeks**! Back to the menu, or 'details' on this speedy course?"
+      },
+      "options": {
+        "yes": "programmes_menu",
+        "no": "exit_conversation",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "tell me more": "ai_course_1_details"
+      }
+    },
+    "ai_course_1_details": {
+      "id": "ai_course_1_details",
+      "type": "info_reloop_end",
+      "message": {
+        "base": "Details: Enrollment for the **Part-Time Remote** 'Generative AI Essentials' course is ongoing. Classes will be **100% Online**, Tuesday and Thursday, for a duration of just **2 Weeks**. The link is: https://moringaschool.com/courses/generative-ai-essentials-program/. Would you like to go back to the Programmes Menu?",
+        "formal": "The 'Generative AI Essentials' is a **Part-Time Remote** course. Classes are conducted **100% Online**, specifically on Tuesdays and Thursdays, spanning only **2 Weeks**. The program link is: https://moringaschool.com/courses/generative-ai-essentials-program/. Shall I return you to the Programmes Menu?",
+        "casual": "The **Gen AI Essentials** course is **Part-Time Remote**. It's **100% Online**, runs on Tuesdays and Thursdays, and is super quick: just **2 Weeks**. Check it: https://moringaschool.com/courses/generative-ai-essentials-program/. Back to the menu?",
+        "humorous": "The **Gen AI Essentials** course is a blink-and-you'll-miss-it **2-Week, Part-Time Remote** crash course, running only on Tuesdays and Thursdays! The express lane is: https://moringaschool.com/courses/generative-ai-essentials-program/. Back to the menu, or still boosting productivity?",
+        "inquisitive": "The Generative AI course is **2 Weeks** long, **Part-Time Remote**, and **100% Online** (Tues & Thurs). The link is provided. Would you like to return to the Programmes Menu?",
+        "narrative": "The structure of the Gen AI Essentials course is a quick **2-Week, Part-Time Remote** commitment, conducted **100% Online** on Tuesdays and Thursdays. We have reached the end of this subject area. Shall we return to the menu?",
+        "concise": "**Gen AI Essentials** Details: **Part-Time Remote**, **2 Weeks**, **100% Online** (Tues & Thurs). Link: https://moringaschool.com/courses/generative-ai-essentials-program/. Menu?",
+        "encouraging": "The Generative AI Essentials course is a super-fast **2-Week, Part-Time Remote** course! That link is: https://moringaschool.com/courses/generative-ai-essentials-program/. Back to the menu?",
+        "playful": "Gen AI is a tiny **2-week** online adventure, only Tues & Thurs! Check the map: https://moringaschool.com/courses/generative-ai-essentials-program/. On to the menu!"
+      },
+      "options": {
+        "yes": "programmes_menu",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "no": "exit_conversation"
+      }
+    },
+    "hs_course_1": {
+      "id": "hs_course_1",
+      "type": "course_end",
+      "message": {
+        "base": "The only High School course available is the **High School Holiday Tech Bootcamp**. This is a fun, hands-on experience for young people between **ages 10–17** where they learn real coding skills and build exciting projects. Would you like to go back to the Programmes Menu, or say 'tell me more' for details?",
+        "formal": "The single High School course offered is the **High School Holiday Tech Bootcamp**. This program is designed as a practical learning experience for individuals **aged 10–17**, focusing on the development of tangible coding skills and project construction. Would you prefer to return to the Programmes Menu, or request 'tell me more' for enrollment specifics?",
+        "casual": "We only have the **High School Holiday Tech Bootcamp**. It's a cool, hands-on camp for **10–17 year olds** to learn real coding and build fun projects! Back to the menu, or 'tell me more'?",
+        "humorous": "It's the kids' turn! The **High School Holiday Tech Bootcamp** is a fun camp for future tech titans **(ages 10–17)** to build awesome projects. Back to the menu, or 'details' on how to enroll the young ones?",
+        "inquisitive": "The **High School Holiday Tech Bootcamp** is the course for **10–17 year olds** to learn coding and build projects. Would you like to return to the Programmes Menu, or 'tell me more' about the program's tracks?",
+        "narrative": "The final subject area leads to the **High School Holiday Tech Bootcamp**, a fun, project-based camp for young learners **aged 10–17** to gain real coding experience. Do you wish to return to the menu, or 'tell me more' about this path?",
+        "concise": "Only HS course: **High School Holiday Tech Bootcamp**. For **ages 10–17**. Learn coding and build projects. Menu, or 'tell me more'?",
+        "encouraging": "Encourage the next generation with the **High School Holiday Tech Bootcamp**! A fun, hands-on way for **10–17 year olds** to learn coding! Back to the menu, or 'tell me more'?",
+        "playful": "The **High School Holiday Tech Bootcamp** is where the cool kids go to code! It's for **ages 10–17** to build amazing things! Back to the menu, or 'details' on this course?"
+      },
+      "options": {
+        "yes": "programmes_menu",
+        "no": "exit_conversation",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "tell me more": "hs_course_1_details"
+      }
+    },
+    "hs_course_1_details": {
+      "id": "hs_course_1_details",
+      "type": "info_reloop_end",
+      "message": {
+        "base": "Details: The **High School Holiday Tech Bootcamp** has **three learning tracks** (Pathfinder-Beginner, Trailblazer-Intermediate, Innovator-Advanced), all starting **November 11th, 2025**. All tracks are **Full-Time Hybrid** (Remote and In-Person), Monday to Friday (Innovator also on Saturday), and all last **2 weeks**. Would you like to go back to the Programmes Menu?",
+        "formal": "The **High School Holiday Tech Bootcamp** offers **three tracks**: Pathfinder (Beginner), Trailblazer (Intermediate), and Innovator (Advanced), all commencing **November 11th, 2025**. All are **Full-Time Hybrid** (Remote/In-Person) over **2 weeks**, Mon-Fri (Innovator also includes Sat). Shall I return you to the Programmes Menu?",
+        "casual": "The **High School Bootcamp** has **three 2-week tracks** starting **Nov 11th, 2025**: **Beginner, Intermediate, and Advanced**. All are Hybrid (Remote and In-Person), Mon-Fri (Advanced includes Sat). Back to the menu?",
+        "humorous": "High School Bootcamp has **three awesome 2-week tracks** starting **Nov 11th, 2025**! Pick your level: Beginner, Intermediate, or Advanced (which means Saturday school!). All are Hybrid. Back to the menu, or still coding?",
+        "inquisitive": "The High School Bootcamp offers **three Hybrid tracks** (Beginner, Intermediate, Advanced) over **2 weeks**, all starting **November 11th, 2025**. Would you like to return to the Programmes Menu?",
+        "narrative": "The structure of the High School Bootcamp provides three Hybrid paths (Beginner, Intermediate, Advanced), each lasting **2 weeks** and starting **November 11th, 2025**. We have reached the end of this subject area. Shall we return to the menu?",
+        "concise": "**HS Bootcamp** Details: **Three Hybrid tracks** (Beginner, Intermediate, Advanced). **2 weeks**, start **Nov 11th, 2025**. Menu?",
+        "encouraging": "The High School Bootcamp has options for every level (Beginner to Advanced), all starting **Nov 11th, 2025** for just **2 weeks**! Back to the menu?",
+        "playful": "HS Bootcamp tracks: **3 options** (Beginner, Intermediate, Advanced), all starting **Nov 11th, 2025** for only **2 weeks**! Check the map: Back to the menu!"
+      },
+      "options": {
+        "yes": "programmes_menu",
+        "programmes": "programmes_menu",
+        "menu": "programmes_menu",
+        "no": "exit_conversation"
+      }
+    },
+    "exit_conversation": {
+      "id": "exit_conversation",
+      "type": "end",
+      "message": {
+        "base": "Thanks for using the (Unofficial) Moringa School Information System. See you again soon!",
+        "formal": "Thank you for utilizing the (Unofficial) Moringa School Information System. We anticipate your next visit.",
+        "casual": "Catch ya later! Thanks for checking out the unofficial Moringa School info bot!",
+        "humorous": "Data collection complete! Farewell from the data-driven spirit of Moringa School. May your servers run smoothly!",
+        "inquisitive": "Thank you for engaging with the system. Do you require any final assistance before concluding our conversation?",
+        "narrative": "And so, the session ends. Thank you for your time with the (Unofficial) Moringa School Information System. Until our next encounter!",
+        "concise": "Thanks. Unofficial Moringa School Information System signing off. Goodbye.",
+        "encouraging": "It was great helping you! Feel free to return anytime to the (Unofficial) Moringa School Information System. Keep exploring!",
+        "playful": "Boop-beep, mission complete! Thanks for the chat. Find me again soon!"
+      },
+      "options": {}
+    }
+  }
+}
